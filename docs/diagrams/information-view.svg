@@ -1,0 +1,131 @@
+<svg viewBox="0 0 1000 680" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', sans-serif">
+  <rect width="1000" height="680" fill="#0f1117"/>
+  <text x="500" y="36" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700" letter-spacing="1">INFORMATION VIEW — Smart Home Energy Optimizer</text>
+  <text x="500" y="54" text-anchor="middle" fill="#64748b" font-size="11">Team Eternal Architects · Aalto University 2025 · NFR-03 · NFR-05 · FR-01 · FR-02</text>
+
+  <!-- ===== PROCESS NODES ===== -->
+  <!-- Settings Management -->
+  <ellipse cx="370" cy="160" rx="90" ry="40" fill="#1e293b" stroke="#34d399" stroke-width="2"/>
+  <text x="370" y="155" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700">Settings</text>
+  <text x="370" y="170" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700">Management</text>
+
+  <!-- Usage Collection -->
+  <ellipse cx="370" cy="330" rx="90" ry="40" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="370" y="325" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">Usage</text>
+  <text x="370" y="340" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">Collection</text>
+
+  <!-- Data Analysis -->
+  <ellipse cx="560" cy="330" rx="90" ry="40" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+  <text x="560" y="325" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="700">Data</text>
+  <text x="560" y="340" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="700">Analysis</text>
+
+  <!-- Price Collection -->
+  <ellipse cx="370" cy="500" rx="90" ry="40" fill="#1e293b" stroke="#fb923c" stroke-width="2"/>
+  <text x="370" y="495" text-anchor="middle" fill="#fdba74" font-size="11" font-weight="700">Price</text>
+  <text x="370" y="510" text-anchor="middle" fill="#fdba74" font-size="11" font-weight="700">Collection</text>
+
+  <!-- ===== STAKEHOLDER / EXTERNAL NODES ===== -->
+  <!-- Smart Devices (left) -->
+  <rect x="50" y="200" width="130" height="60" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="115" y="225" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="700">Smart Device(s)</text>
+  <text x="115" y="242" text-anchor="middle" fill="#64748b" font-size="9">Zigbee · BT · Wi-Fi · LTE</text>
+
+  <!-- User (right) -->
+  <circle cx="860" cy="230" r="18" fill="none" stroke="#34d399" stroke-width="2"/>
+  <line x1="860" y1="248" x2="860" y2="285" stroke="#34d399" stroke-width="2"/>
+  <line x1="860" y1="262" x2="840" y2="275" stroke="#34d399" stroke-width="2"/>
+  <line x1="860" y1="262" x2="880" y2="275" stroke="#34d399" stroke-width="2"/>
+  <line x1="860" y1="285" x2="843" y2="305" stroke="#34d399" stroke-width="2"/>
+  <line x1="860" y1="285" x2="877" y2="305" stroke="#34d399" stroke-width="2"/>
+  <text x="860" y="320" text-anchor="middle" fill="#34d399" font-size="13" font-weight="700">User</text>
+
+  <!-- Data Consumer (right) -->
+  <circle cx="860" cy="450" r="18" fill="none" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="860" y1="468" x2="860" y2="505" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="860" y1="482" x2="840" y2="495" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="860" y1="482" x2="880" y2="495" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="860" y1="505" x2="843" y2="525" stroke="#a78bfa" stroke-width="2"/>
+  <line x1="860" y1="505" x2="877" y2="525" stroke="#a78bfa" stroke-width="2"/>
+  <text x="860" y="540" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="700">Data Consumer</text>
+  <text x="860" y="555" text-anchor="middle" fill="#64748b" font-size="9">Grid operators · Analytics</text>
+
+  <!-- Price Providers (left-bottom) -->
+  <rect x="50" y="470" width="130" height="60" rx="6" fill="#1e293b" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="115" y="495" text-anchor="middle" fill="#fdba74" font-size="11" font-weight="700">Price Data</text>
+  <text x="115" y="510" text-anchor="middle" fill="#fdba74" font-size="11" font-weight="700">Providers</text>
+  <text x="115" y="525" text-anchor="middle" fill="#64748b" font-size="9">External APIs</text>
+
+  <!-- ===== DATA FLOWS ===== -->
+  <!-- Smart Devices → Settings Management: Current settings, timestamp, amount used -->
+  <path d="M180,230 Q260,200 280,170" stroke="#f59e0b" stroke-width="2" fill="none" marker-end="url(#arr_y)"/>
+  <text x="205" y="193" fill="#f59e0b" font-size="9">Current device settings</text>
+  <text x="205" y="205" fill="#f59e0b" font-size="9">Settings timestamp</text>
+
+  <!-- Smart Devices → Usage Collection: Amount used, time of use -->
+  <path d="M180,255 Q260,300 280,320" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arr_b)"/>
+  <text x="188" y="300" fill="#3b82f6" font-size="9">Amount used</text>
+  <text x="188" y="313" fill="#3b82f6" font-size="9">Time of use</text>
+
+  <!-- Settings Management → Smart Devices: Change to device-specific settings -->
+  <path d="M280,145 Q200,140 180,220" stroke="#34d399" stroke-width="2" fill="none" marker-end="url(#arr_g)"/>
+  <text x="215" y="168" fill="#34d399" font-size="9">Change to device</text>
+  <text x="215" y="180" fill="#34d399" font-size="9">specific settings</text>
+
+  <!-- Settings Management → User: Change to app settings -->
+  <path d="M460,145 Q660,120 842,220" stroke="#34d399" stroke-width="2" fill="none" marker-end="url(#arr_g)"/>
+  <text x="600" y="128" fill="#34d399" font-size="9">A change to app specific settings</text>
+
+  <!-- Settings Management → DataAnalysis: Settings data -->
+  <path d="M450,165 Q510,165 510,310" stroke="#34d399" stroke-width="2" fill="none" marker-end="url(#arr_g)"/>
+  <text x="518" y="230" fill="#34d399" font-size="9">Settings data</text>
+
+  <!-- Usage Collection → Data Analysis: Usage data -->
+  <line x1="460" y1="330" x2="470" y2="330" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr_b)"/>
+  <text x="462" y="320" fill="#3b82f6" font-size="9">Usage data</text>
+
+  <!-- Price Collection → Data Analysis: Price data -->
+  <path d="M460,490 Q510,490 510,370" stroke="#fb923c" stroke-width="2" fill="none" marker-end="url(#arr_o)"/>
+  <text x="515" y="440" fill="#fb923c" font-size="9">Price data</text>
+
+  <!-- Price Provider → Price Collection: Spot prices, futures -->
+  <line x1="180" y1="500" x2="280" y2="500" stroke="#fb923c" stroke-width="2" marker-end="url(#arr_o)"/>
+  <text x="195" y="492" fill="#fb923c" font-size="9">Spot prices</text>
+  <text x="195" y="515" fill="#fb923c" font-size="9">Futures prices</text>
+
+  <!-- DataAnalysis → User: Recommendations + User-specific usage data -->
+  <path d="M650,315 Q760,290 842,250" stroke="#a78bfa" stroke-width="2.5" fill="none" marker-end="url(#arr_v)"/>
+  <text x="714" y="288" fill="#a78bfa" font-size="9">Recommendation</text>
+  <path d="M650,330 Q760,340 842,300" stroke="#3b82f6" stroke-width="2" fill="none" marker-end="url(#arr_b)"/>
+  <text x="714" y="355" fill="#3b82f6" font-size="9">User-specific usage data</text>
+
+  <!-- DataAnalysis → DataConsumer: Anonymized aggregated usage data -->
+  <path d="M650,345 Q760,400 842,455" stroke="#a78bfa" stroke-width="2.5" fill="none" stroke-dasharray="6,3" marker-end="url(#arr_v)"/>
+  <text x="690" y="405" fill="#a78bfa" font-size="9">Anonymized &amp; aggregated</text>
+  <text x="690" y="418" fill="#a78bfa" font-size="9">usage data (GDPR)</text>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="30" y="600" width="940" height="65" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="50" y="622" fill="#94a3b8" font-size="11" font-weight="700">DATA FLOWS</text>
+  <line x1="160" y1="618" x2="205" y2="618" stroke="#34d399" stroke-width="2" marker-end="url(#arr_g)"/>
+  <text x="215" y="622" fill="#34d399" font-size="10">Settings data</text>
+  <line x1="300" y1="618" x2="345" y2="618" stroke="#3b82f6" stroke-width="2" marker-end="url(#arr_b)"/>
+  <text x="355" y="622" fill="#3b82f6" font-size="10">Usage data</text>
+  <line x1="455" y1="618" x2="500" y2="618" stroke="#fb923c" stroke-width="2" marker-end="url(#arr_o)"/>
+  <text x="510" y="622" fill="#fb923c" font-size="10">Price data</text>
+  <line x1="610" y1="618" x2="655" y2="618" stroke="#a78bfa" stroke-width="2.5" marker-end="url(#arr_v)"/>
+  <text x="665" y="622" fill="#a78bfa" font-size="10">Recommendations / Aggregated</text>
+  <line x1="850" y1="618" x2="895" y2="618" stroke="#a78bfa" stroke-width="2.5" stroke-dasharray="6,3" marker-end="url(#arr_v)"/>
+  <text x="905" y="622" fill="#94a3b8" font-size="10">Anonymized</text>
+
+  <text x="50" y="652" fill="#64748b" font-size="9">Access control: User-specific data (User DB) · Aggregated electricity data (ElecUsageDB) · Prices (PriceDB) · All restricted internally by service role</text>
+  <text x="50" y="664" fill="#64748b" font-size="9">GDPR compliance: Data consumers receive ONLY anonymized, aggregated data — no PII stored anywhere in the system (NFR-05)</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#64748b"/></marker>
+    <marker id="arr_y" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/></marker>
+    <marker id="arr_b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/></marker>
+    <marker id="arr_g" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#34d399"/></marker>
+    <marker id="arr_o" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#fb923c"/></marker>
+    <marker id="arr_v" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#a78bfa"/></marker>
+  </defs>
+</svg>

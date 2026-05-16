@@ -1,0 +1,188 @@
+<svg viewBox="0 0 1100 780" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', sans-serif">
+  <rect width="1100" height="780" fill="#0f1117"/>
+  <text x="550" y="36" text-anchor="middle" fill="#e2e8f0" font-size="18" font-weight="700" letter-spacing="1">DEPLOYMENT VIEW — Smart Home Energy Optimizer</text>
+  <text x="550" y="54" text-anchor="middle" fill="#64748b" font-size="11">Team Eternal Architects · Aalto University 2025</text>
+
+  <!-- ======= CLIENT DEVICES (top row) ======= -->
+  <rect x="60" y="70" width="180" height="120" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="150" y="90" text-anchor="middle" fill="#34d399" font-size="9">«device»</text>
+  <text x="150" y="105" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700">UserUI:PhysicalComputer</text>
+  <rect x="80" y="112" width="140" height="28" rx="4" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="150" y="125" text-anchor="middle" fill="#94a3b8" font-size="9">«executionEnv»: Chrome</text>
+  <rect x="90" y="145" width="120" height="22" rx="3" fill="#1a2744" stroke="#3b82f6" stroke-width="1"/>
+  <text x="150" y="160" text-anchor="middle" fill="#93c5fd" font-size="9">«artifact» UIReactBundle</text>
+
+  <rect x="280" y="70" width="180" height="120" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="370" y="90" text-anchor="middle" fill="#34d399" font-size="9">«device»</text>
+  <text x="370" y="105" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700">MobileUser:AndroidPhone</text>
+  <rect x="300" y="112" width="140" height="28" rx="4" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="370" y="125" text-anchor="middle" fill="#94a3b8" font-size="9">«executionEnv»: AndroidOS</text>
+  <rect x="310" y="145" width="120" height="22" rx="3" fill="#1a2744" stroke="#3b82f6" stroke-width="1"/>
+  <text x="370" y="160" text-anchor="middle" fill="#93c5fd" font-size="9">«artifact» ReactNativeBundle</text>
+
+  <rect x="500" y="70" width="180" height="120" rx="8" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="590" y="90" text-anchor="middle" fill="#a78bfa" font-size="9">«device»</text>
+  <text x="590" y="105" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="700">DataPlatform:PhysicalComputer</text>
+  <rect x="520" y="112" width="140" height="28" rx="4" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="590" y="125" text-anchor="middle" fill="#94a3b8" font-size="9">«executionEnv»: Chrome</text>
+  <rect x="530" y="145" width="120" height="22" rx="3" fill="#1a2744" stroke="#3b82f6" stroke-width="1"/>
+  <text x="590" y="160" text-anchor="middle" fill="#93c5fd" font-size="9">«artifact» UIReactBundle</text>
+
+  <!-- HTTPS arrows from clients to embedded -->
+  <line x1="150" y1="190" x2="270" y2="270" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="175" y="238" fill="#3b82f6" font-size="9">«https»</text>
+  <line x1="370" y1="190" x2="380" y2="270" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="380" y="238" fill="#3b82f6" font-size="9">«https»</text>
+  <line x1="590" y1="190" x2="480" y2="270" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="555" y="238" fill="#3b82f6" font-size="9">«https»</text>
+
+  <!-- ======= EMBEDDED HARDWARE (main box) ======= -->
+  <rect x="30" y="270" width="740" height="460" rx="10" fill="#111827" stroke="#1e40af" stroke-width="2"/>
+  <text x="50" y="294" fill="#1e40af" font-size="11" font-weight="700">«device» :EmbeddedHardware — RTOS</text>
+
+  <!-- UserDataDB container -->
+  <rect x="50" y="305" width="165" height="80" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="132" y="322" text-anchor="middle" fill="#38bdf8" font-size="9">«DockerContainer»</text>
+  <text x="132" y="336" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">UserDataDB</text>
+  <rect x="65" y="343" width="135" height="30" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="132" y="358" text-anchor="middle" fill="#64748b" font-size="9">«artifact» Redis</text>
+  <text x="132" y="375" text-anchor="middle" fill="#64748b" font-size="8">In-memory · Settings · Prefs</text>
+
+  <!-- UserInteractionService container -->
+  <rect x="240" y="305" width="175" height="80" rx="6" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+  <text x="327" y="322" text-anchor="middle" fill="#3b82f6" font-size="9">«JS V8 engine»</text>
+  <text x="327" y="336" text-anchor="middle" fill="#93c5fd" font-size="11" font-weight="700">UserInteractionService</text>
+  <rect x="255" y="343" width="145" height="30" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="327" y="358" text-anchor="middle" fill="#64748b" font-size="9">«artifact» Node.js</text>
+  <text x="327" y="375" text-anchor="middle" fill="#64748b" font-size="8">REST API · Backend Logic</text>
+
+  <!-- RESP label between UserDB and UserInteraction -->
+  <line x1="215" y1="345" x2="240" y2="345" stroke="#38bdf8" stroke-width="1" stroke-dasharray="4,2" marker-end="url(#arr)"/>
+  <text x="225" y="338" fill="#94a3b8" font-size="8">RESP</text>
+
+  <!-- DeviceControlService -->
+  <rect x="50" y="415" width="165" height="80" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="132" y="432" text-anchor="middle" fill="#f59e0b" font-size="9">«JS V8 engine»</text>
+  <text x="132" y="446" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="700">DeviceControlService</text>
+  <rect x="65" y="453" width="135" height="30" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="132" y="468" text-anchor="middle" fill="#64748b" font-size="9">«artifact» Node.js</text>
+  <text x="132" y="485" text-anchor="middle" fill="#64748b" font-size="8">Smart device control</text>
+
+  <!-- DataAnalysisService (local Flask API) -->
+  <rect x="240" y="415" width="175" height="80" rx="6" fill="#1e293b" stroke="#a78bfa" stroke-width="2"/>
+  <text x="327" y="432" text-anchor="middle" fill="#a78bfa" font-size="9">«DockerContainer»</text>
+  <text x="327" y="446" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="700">DataAnalysisService</text>
+  <rect x="255" y="453" width="145" height="30" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="327" y="468" text-anchor="middle" fill="#64748b" font-size="9">«artifact» FlaskAPI</text>
+  <text x="327" y="485" text-anchor="middle" fill="#64748b" font-size="8">scikit-learn · Anomaly · Recs</text>
+
+  <!-- MultiProtocolHandler (bare metal) -->
+  <rect x="450" y="415" width="175" height="80" rx="6" fill="#1e293b" stroke="#f87171" stroke-width="1.5"/>
+  <text x="537" y="432" text-anchor="middle" fill="#f87171" font-size="9">«Bare Metal»</text>
+  <text x="537" y="446" text-anchor="middle" fill="#fca5a5" font-size="11" font-weight="700">Multi_Protocol_Handler</text>
+  <rect x="465" y="453" width="145" height="30" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="537" y="468" text-anchor="middle" fill="#64748b" font-size="9">«artifact» Rust ProtocolAdapters</text>
+  <text x="537" y="485" text-anchor="middle" fill="#64748b" font-size="8">Zigbee · BT · Wi-Fi · LTE · NB-IoT</text>
+
+  <!-- DataTransformService -->
+  <rect x="450" y="525" width="175" height="80" rx="6" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+  <text x="537" y="542" text-anchor="middle" fill="#f59e0b" font-size="9">«DockerContainer»</text>
+  <text x="537" y="556" text-anchor="middle" fill="#fcd34d" font-size="11" font-weight="700">DataTransformService</text>
+  <rect x="465" y="563" width="145" height="30" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="537" y="578" text-anchor="middle" fill="#64748b" font-size="9">«artifact» Pandas</text>
+  <text x="537" y="596" text-anchor="middle" fill="#64748b" font-size="8">Protocol normalization</text>
+
+  <!-- ElectricityUsageDB -->
+  <rect x="240" y="525" width="175" height="80" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="327" y="542" text-anchor="middle" fill="#38bdf8" font-size="9">«DockerContainer»</text>
+  <text x="327" y="556" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">ElectricityUsageDB</text>
+  <rect x="255" y="563" width="145" height="30" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="327" y="578" text-anchor="middle" fill="#64748b" font-size="9">«artifact» TimescaleDB</text>
+  <text x="327" y="596" text-anchor="middle" fill="#64748b" font-size="8">Time-series consumption data</text>
+
+  <!-- PriceDataDB -->
+  <rect x="50" y="635" width="165" height="75" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="132" y="652" text-anchor="middle" fill="#38bdf8" font-size="9">«DockerContainer»</text>
+  <text x="132" y="666" text-anchor="middle" fill="#7dd3fc" font-size="11" font-weight="700">PriceDataDB</text>
+  <rect x="65" y="673" width="135" height="28" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="132" y="688" text-anchor="middle" fill="#64748b" font-size="9">«artifact» PostgreSQL</text>
+  <text x="132" y="700" text-anchor="middle" fill="#64748b" font-size="8">Spot &amp; futures prices</text>
+
+  <!-- PriceCollectionService -->
+  <rect x="240" y="635" width="175" height="75" rx="6" fill="#1e293b" stroke="#fb923c" stroke-width="1.5"/>
+  <text x="327" y="652" text-anchor="middle" fill="#fb923c" font-size="9">«JS V8 engine»</text>
+  <text x="327" y="666" text-anchor="middle" fill="#fdba74" font-size="11" font-weight="700">PriceCollectionService</text>
+  <rect x="255" y="673" width="145" height="28" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="327" y="688" text-anchor="middle" fill="#64748b" font-size="9">«artifact» Node.js</text>
+  <text x="327" y="700" text-anchor="middle" fill="#64748b" font-size="8">SQL → PriceDataDB</text>
+
+  <!-- ElecDataCollectionService -->
+  <rect x="450" y="635" width="175" height="75" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="537" y="652" text-anchor="middle" fill="#34d399" font-size="9">«DockerContainer»</text>
+  <text x="537" y="666" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700">ElecDataCollectionSvc</text>
+  <rect x="465" y="673" width="145" height="28" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="537" y="688" text-anchor="middle" fill="#64748b" font-size="9">«artifact» Pandas · NumPy</text>
+  <text x="537" y="700" text-anchor="middle" fill="#64748b" font-size="8">Kafka ← DataTransform</text>
+
+  <!-- Internal connection lines -->
+  <line x1="327" y1="385" x2="327" y2="415" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="280" y1="385" x2="180" y2="415" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="132" y1="385" x2="132" y2="415" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="450" y1="460" x2="425" y2="460" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="327" y1="495" x2="327" y2="525" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="537" y1="495" x2="537" y2="525" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="415" y1="565" x2="450" y2="565" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="240" y1="673" x2="215" y2="673" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="327" y1="605" x2="327" y2="635" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+  <line x1="537" y1="605" x2="537" y2="635" stroke="#94a3b8" stroke-width="1" marker-end="url(#arr)"/>
+
+  <!-- Kafka label -->
+  <text x="415" y="555" fill="#fb923c" font-size="9" text-anchor="middle">Kafka</text>
+  <text x="680" y="480" fill="#fb923c" font-size="9">RabbitMQ</text>
+
+  <!-- ======= AWS CLOUD BOX ======= -->
+  <rect x="800" y="290" width="270" height="390" rx="10" fill="#0c1a2e" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="935" y="312" text-anchor="middle" fill="#f59e0b" font-size="12" font-weight="700">«device» DataAnalysisModel:AWS</text>
+
+  <!-- ModelStorage S3 -->
+  <rect x="820" y="325" width="230" height="100" rx="6" fill="#1e293b" stroke="#34d399" stroke-width="1.5"/>
+  <text x="935" y="342" text-anchor="middle" fill="#34d399" font-size="9">«executionEnv»: S3</text>
+  <text x="935" y="356" text-anchor="middle" fill="#6ee7b7" font-size="11" font-weight="700">ModelStorage</text>
+  <rect x="835" y="362" width="95" height="22" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="882" y="377" text-anchor="middle" fill="#64748b" font-size="8">Trained Models</text>
+  <rect x="940" y="362" width="95" height="22" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="987" y="377" text-anchor="middle" fill="#64748b" font-size="8">Datasets</text>
+  <text x="935" y="415" text-anchor="middle" fill="#64748b" font-size="8">Durable artifact storage · Auto-scaling</text>
+
+  <!-- ModelTraining EC2 -->
+  <rect x="820" y="440" width="230" height="100" rx="6" fill="#1e293b" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="935" y="457" text-anchor="middle" fill="#a78bfa" font-size="9">«executionEnv»: EC2</text>
+  <text x="935" y="471" text-anchor="middle" fill="#c4b5fd" font-size="11" font-weight="700">ModelTraining</text>
+  <rect x="835" y="477" width="95" height="22" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="882" y="492" text-anchor="middle" fill="#64748b" font-size="8">«artifact» PyTorch</text>
+  <rect x="940" y="477" width="95" height="22" rx="3" fill="#0f1117" stroke="#334155" stroke-width="1"/>
+  <text x="987" y="492" text-anchor="middle" fill="#64748b" font-size="8">«artifact» CUDA</text>
+  <text x="935" y="532" text-anchor="middle" fill="#64748b" font-size="8">GPU training · Multi-household data</text>
+
+  <!-- Kafka label to/from AWS -->
+  <line x1="660" y1="460" x2="800" y2="430" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr_y)"/>
+  <line x1="800" y1="470" x2="660" y2="500" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#arr)"/>
+  <text x="730" y="448" fill="#f59e0b" font-size="9">Kafka</text>
+
+  <!-- External: SmartDevices, EnergySupplier, PriceSystem (below embedded box) -->
+  <rect x="50" y="760" width="160" height="15" rx="3" fill="#0f1117" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="130" y="771" text-anchor="middle" fill="#fb923c" font-size="8">«external» PriceSystem · https</text>
+  <rect x="340" y="760" width="160" height="15" rx="3" fill="#0f1117" stroke="#fb923c" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="420" y="771" text-anchor="middle" fill="#fb923c" font-size="8">«external» EnergySupplier · https</text>
+  <rect x="550" y="760" width="160" height="15" rx="3" fill="#0f1117" stroke="#f59e0b" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="630" y="771" text-anchor="middle" fill="#f59e0b" font-size="8">«external» SmartDevices · WPAN/WLAN/WWAN</text>
+
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#64748b"/>
+    </marker>
+    <marker id="arr_y" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+</svg>
